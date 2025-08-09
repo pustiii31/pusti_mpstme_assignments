@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Title</title>
+
+    </head>
+    <body>
+        <p id="myText2">Hello</p>
+        <button id="myButton">Change Text</button>
+<script>
+//Select the button
+    const button = document.getElementById ("myButton");
+//Add a click event listener
+    button.addEventListener ("click", function() {
+        document.getElementById ("myText2").innerHTML = "Hello, World!";
+});
+</script>
+<button onclick="changeBackground()">Change Background</button>
+<script>
+    function changeBackground(){
+        document.querySelector("body").style.backgroundColor="Lightblue";
+    }
+
+
+    // ass 2
+
+    function changeText(){
+        document.getElementById("Change Text").innerHTML="Hello, World 2";
+
+    }
+    const para = document.createElement("p");
+    para.innerHTML = "Hello World";
+    para.id="changeText";
+    const button2= document.createElement("button");
+    button2.text="Change Text";
+    button2.addEventListener("click",function(){
+        changeText();
+    })
+   
+    document.body.appendChild(para);
+    document.body.appendChild(button);
+
+</script>
+</body>
+</html>
+
+//screateElement(), getElementById(), addEventListener(), querySelector(),querySelectAll()
